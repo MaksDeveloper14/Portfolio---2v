@@ -1,0 +1,18 @@
+// burger
+
+const burger = document.querySelector('.my-works__burger');
+const burgerImage = document.querySelector('.my-works__burger-image');
+const windowModal = document.querySelector('.window-modal');
+
+console.log(burger);
+console.log(windowModal);
+
+burger.addEventListener('click', function() {
+	windowModal.classList.toggle('show');
+	if(windowModal.classList.contains('show')) {
+		burgerImage.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEUAAAD///+1tbW8vLzm5ub8/Pzi4uL29vaioqKlpaVoaGhRUVG+vr5BQUGsrKzx8fFZWVlhYWGbm5tKSkrV1dXNzc2AgIDFxcUhISEODg6QkJCvr686OjonJyfU1NS3t7cwMDB3d3eGhoY+Pj4YGBhvb2/IWjBFAAADfElEQVR4nO3baVfiQBCFYRAQFxTFFUXF7f//xTHjSt+bhNOHIV3O+3xN4ak+KTup7k6vBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgP/dcjIZJCZ7zT/ZT38xOdpOrpmO++q16QePEj7ZVq6ZdnWE03lD/DiNHjZFl+DE3MSH+vCJBJ9uL9dM+2aItVkfSOjxNnPNNNQRDteOrY0syZm5ifs+VOelsufRT65OD13goYTNtp1rJlOnuy5O5t3zbWeaS++NvTszCXrefq6ZXJ0u0qDFKA256SLXTOa5LxV4n0ZcdJFpLvfcf1oNuUyvj+UuF83U6eh6JUJq9KnmT5XKzKcrVXgVukYrbj69/L78KjXaXaq5TB81/qrT+TS9dtBlrplMnX61frfplUGXmeZy76cfd+o0nWam3aaay8ynH+2tPC7Lbwo9U6d/2z95XYvQFFpuPn1rMp7lznadaL49U6e93rkZdVjm/XQmr2tRmkLL1Wm6umZbxzhcH7VqFKcp9EydrorUFFquTn8Ks3BRr6VOr9v/QvHMc//bZfvvy3fUl2b3y1XXyW2Gee5/mP6GGq3UzqePXWe2KXXzacOeVDS+TocvXee1QbZOf9EtdPuElah9ryMN03uZlr6hvT7dg3m303Vim1L/bhpxDdGp7y8aj2nE0fTuHXKdNNXcP/2GOm3sLSLuV6RkAT9R+iGvVqctAwz/+q2bTFqnsVuoHRmPDjF0Gywbof2FmXgCL2VcS43O3CGG6bLrRLMN0rFUa4dSuIHrVGp0dNbzk0/QOp2P00W29z0Y0yyOYs6nF+k4Pvdg9GBwzKXvR1ujlTtTp9HOC725k3Xg788SZAvxbfjL7lLNJDU6bLrY7993lmmmJxnCzwPOevIy3DbbQt7OVj+duTF1GuOM9yc5PJqetzArG6HqVG/RWRKx1BFGqtMjSV4/R3ArjHHqVBaA3XmLdU5Kl0puz+jERK15or9EWqP+3JpbZYxRp+t+zDRf98uT0uhmoavRituRavnitAT673VbGysdcl8fK+WR0ms4//timozij2LqAfams5W6UlX8cVpdAK6v0Yp8dlHzaCmGTo8tRfdimoyi51NdR2vbqzfNcMl1qtN/c41W3BZ/uUcY9h52Vt22r6EtBzuphyAvbwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPh3/gBPCBwzZ+hFqgAAAABJRU5ErkJggg==';
+	} else {
+		burgerImage.src = 'https://lh3.googleusercontent.com/proxy/bheWlN2eHAT35uiSy3NAq0lYdk3wCEAGuW3jMfYMYvdGVY2gTz5cjoDTJ-WYMyJfJil6ZxWbmDvXdHcGgOWGP99lm2jMsPSqrAObCsgV7Ov1COGfNCvThM8XCdCXuA';
+	}
+});
+

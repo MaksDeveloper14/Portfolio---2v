@@ -1,0 +1,769 @@
+/* -- Импортируем Google Fonts -- */
+
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Inconsolata:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+
+
+/* HEADER */
+
+.header {
+	/*position: relative;*/
+	font-family: serif;
+	width: 100%;
+	height: 100vh;
+	background: url('images/серый комп.jpg') no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	background-color: #5999b2; /* по фоновая картинка не загрузиться, будет цвет фона такой */
+}
+
+.header__head {
+	width: 100%;
+	height: 75px;
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+.header__title {
+	/*position: absolute;*/
+	margin: 0;
+	text-align: center;
+	font-size: 44px;
+	font-weight: bold;
+	box-sizing: border-box;
+	line-height: 55px;
+	color: #333;
+}
+
+.header__subtitle {
+	font-family: 'Space Grotesk', sans-serif;
+	position: absolute;
+	left: 32%;
+	top: 40%;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 40px;
+	padding-left: 120px;
+	box-sizing: border-box;
+	color: #555;
+	font-style: italic;
+	line-height: 50px;
+}
+
+
+/* ABOUT ME */
+
+.about-me {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 100px 0;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+/*.about-me:after {
+	content: "Нажимай";
+	position: absolute;
+	color: red;
+	bottom: 100px;
+	color: white;
+	letter-spacing: 4px;
+	background-color: black;
+	right: 17%;
+}*/
+
+.about-me .fa-instagram {
+	font-size: 20px;
+	right: 25.6%;
+	bottom: 98px;
+}
+
+.about-me__content {
+	width: 550px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 28px;
+	font-size: 20px;
+}
+
+.about-me__title {
+	margin: 0;
+	margin-bottom: 20px;
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+}
+
+.about-me__wrapper-my-photo {
+	position: relative;
+	padding: 0 30px;
+}
+
+.about-me__my-photo {
+	width: 350px;
+	height: 400px;
+	z-index: 1000;
+	border-radius: 10px;
+}
+
+/* Стрелки к фото справа и слева */
+.fa-arrow-right {
+	position: absolute;
+	right: 0;
+	top: 45%;
+	cursor: pointer;
+/*	border: solid 3px black;
+	border-radius: 50%;
+	padding: 10px;
+	color: white;
+	background-color: black;*/
+}
+
+.fa-arrow-left {
+	position: absolute;
+	left: 0px;
+	top: 45%;
+	cursor: pointer;
+}
+
+.fa-arrow-right:before,
+.fa-arrow-left:before {
+	font-size: 16px;
+	color: #888;
+}
+
+/*.wrapper-link-image {
+	position: relative;
+}
+.wrapper-link-image::after {
+	content: 'Нажимай';
+	color: white;
+	background-color: #333;
+	position: absolute;
+	letter-spacing: 5px;
+	right: -87px;
+	top: 48%;
+	padding: 3px 5px;
+	font-family: sans-serif;
+	transform: rotate(90deg);
+}*/
+
+
+/* My works */
+
+.my-works {
+	width: 100%;
+	background-color: #e8e8e8;
+	background-image: url('images/кирпичи.jpg');
+	background-size: cover;
+}
+
+.wrapper-empty {
+	position: relative;
+} 
+
+.my-works__title {	
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 40px;
+	color: white;
+	cursor: pointer;
+	background-color: #101010;
+	background-color: #0a0a0a;
+} 
+
+.my-works__wrap-works {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 50px 0;
+}
+
+.my-works__work-link {
+	width: 300px;
+	height: 250px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 18px;	
+	margin-right: 18px;	
+	border: 6px solid black;
+	border-radius: 10px;
+	font-weight: bold;
+	background-color: white;
+
+	/* способ отцентровки текста внутри блока */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	padding: 100px 10px;
+	box-sizing: border-box;
+	font-size: 17px;
+	font-family: Comic Sans MS;
+	/*font-family: 'Inconsolata', monospace;*/
+	/*font-weight: normal;*/
+}
+
+.my-works__work-link:hover {
+	color: #0f7a8c;
+}
+
+.my-works__description-link {
+	position: absolute;
+	bottom: 23%;
+
+	/*без скачать zip*/
+	bottom: 20%;
+
+	left: 63%;
+	text-decoration: none;
+	color: #555;
+	/*font-style: italic;*/
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Comic Sans MS;
+	color: black;
+	color: #0f7a8c;
+	background-color: #333;
+	color: white;
+	padding: 3px 5px;
+	font-weight: normal;
+}
+
+.my-works__description-link:hover {
+	color: #0f7a8c;
+}
+
+.my-works__code-zip {
+	position: absolute;
+	bottom: 12%;
+	left: 14%;
+	text-decoration: none;
+	color: #666;
+	/*font-style: italic;*/
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Comic Sans MS;
+	color: #0f7a8c;
+	background-color: #333;
+	color: white;
+	padding: 3px 5px;
+	font-weight: normal;
+}
+
+.my-works__code-zip:hover {
+	color: #0f7a8c;
+}
+
+
+
+/* ~~~~~~~~~ FOOTER ~~~~~~~~~ */
+
+.footer {
+	width: 100%;
+	background-color: #111;
+	border-top: 1px solid white;
+}
+
+.footer h2 {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 120px;
+}
+
+.certificates {
+	width: 80%;
+	height: 330px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.certificaties__item {
+	width: 110px;
+	height: 50%	;
+	box-sizing: border-box;
+	position: relative;
+	border: solid 3px white;
+	/*border-radius: 5px;*/
+}
+
+.certificaties__item:hover {
+
+}
+
+.certificaties__item img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.footer__text {
+	height: 100px;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	font-weight: normal;
+	background-color: #040404;
+	background-color: black;
+	background-color: #111;
+}
+
+
+
+/* classes dynamic */
+
+.show {
+	visibility: visible;
+}
+
+
+
+
+/* Скрытые элементы но реализованные в структуре HTML для адаптива */
+
+
+.about-me__float-left {
+	display: none;
+}
+
+.about-me__float-left h2 {
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+
+
+
+
+
+	 /*~~~~~~~~ МЕДИАЗАПРОСЫ ~~~~~~~ */
+
+	 /* Мой планшет Huawei - 1200px на 1920px */
+ 	 /* Мой телефон Samsung - 1080px на 2340px */
+ 	 /* Мой ноутбук Lenovo ThinkPad -  */
+
+
+	 @media screen and (max-width: 1700px) {
+	   .header__subtitle {
+	   	display: none;
+	   }
+	 }
+
+	 @media screen and (max-width: 1007px) {
+	 	.header .contact-information {
+	 		height: 55px;
+	 	}
+	 }
+
+	 @media screen and (max-width: 1200px) {
+ 	  .header {
+ 	  	height: 60vh;
+ 		}
+ 		.header__title {
+ 			font-size: 35px;
+ 			line-height: 45px;
+ 			margin-top: 20px;
+ 		}
+ 		.about-me {
+ 			position: relative;
+ 			padding: 0;
+ 			padding-top: 50px;
+ 			padding-bottom: 50px;
+ 		}
+ 		.about-me__text {
+ 			margin-bottom: 50px;
+ 			font-size: 14px;
+ 			padding-left: 20px;
+ 			padding-right: 20px;
+ 		}
+
+ 		.about-me__wrapper-image {
+ 			position: relative;
+ 		}
+
+ 		.about-me__my-photo {
+ 			width: 260px;
+ 			height: 300px;
+ 		}
+
+    .my-works__title {
+    	padding: 20px;
+    	font-size: 24px;
+    }    
+   	.my-works__work-link {
+	   	width: 170px;
+	   	height: 170px;
+	   	padding: 15px;
+	   	font-size: 14px;
+	   }
+	   .certificaties__item {
+	   	width: 90px;
+	   	height: 45%;
+	   }
+	   .wrapper-link-image::after {
+			 font-size: 12px;
+			 right: -54px;
+			 /*border-radius: 0;*/
+		 }
+		 .my-works__description-link {
+			bottom: 22%;
+			left: 61%;
+			font-size: 12px;
+		 }
+		 .my-works__code-zip {
+		 	bottom: 16%;
+			left: 16%;
+			font-size: 12px;
+		 }
+	 }
+
+
+
+	 /* ~~~~~~~~~ Для телефона ~~~~~~~~~  */
+
+	 @media screen and (min-width: 480px) and (max-width: 617px) {
+	   .my-works__work-link {
+	   		width: 215px;
+	   		height: 215px;
+	   }
+		 .about-me__wrapper-my-photo {
+		 	padding: 0 30px;
+		 }
+	 }
+
+	 	@media screen and (min-width: 480px) and (max-width: 512px) {
+	   .my-works__work-link {
+	   		width: 200px;
+	   		height: 200px;
+	   }
+	 } 
+
+	 @media screen and (max-width: 617px) {
+	 	 .my-works__title {
+	 	   font-size: 17px;
+	 	 }
+		 .about-me__wrapper-my-photo {
+		 	padding: 0 45px;
+		 }
+	 }
+
+
+	 /* ~~~~~~~  Альбомная ориентация  ~~~~~~~~ */
+
+	 @media screen and (min-width: 700px) and (max-width: 1200px) {
+	 		.header {
+	 			height: 100vh;
+	 		}
+	 		.about-me {
+	 			flex-wrap: nowrap;
+	 		}
+
+	 		.about-me__text {
+	 			padding-left: 65px;
+	 			padding-right: 65px;
+	 			box-sizing: border-box;
+	 		}
+	 		.about-me__my-photo {
+	 			width: 280px;
+	 			height: 320px;
+	 		}
+	 		.my-works__wrap-works {
+	 			justify-content: space-around;
+	 		}
+	 		.my-works__work-link {
+	 			width: 200px;
+	   		height: 200px;
+	   		border: 4px solid black;
+	   		box-sizing: border-box;
+	   		padding: 30px;
+	 		}
+	 		.about-me__wrapper-my-photo {
+	 			padding: 0;
+		 	}
+		 	.fa-arrow-left {
+		 		top: 110%;
+		 		left: 45%;
+		 	}
+		 	.fa-arrow-right {
+		 		top: -15%;
+		 		left: 45%;
+		 	}
+	 }
+
+	 /* Высота экрана в для телефонов */
+	 @media screen and (max-height: 400px) {
+     .header__title {
+       display: none;
+     }
+	 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*	 @media screen and (max-width: 531px) { 
+	 	.my-works__work-link {
+	   	width: 180px;
+	   	height: 150px;
+	   	padding: 0;
+	   	font-size: 14px;
+	   }
+	 }*/
+
+/*	 	@media screen and (max-width: 431px) { 
+	 	.my-works__work-link {
+	   	width: 100%;
+	   	height: 150px;
+	   	padding: 0;
+	   	font-size: 14px;
+	   }
+	 }*/
+
+
+/* Под планшеты в вертикальном положении */
+/* Мобильные устройства в вертикальном положении */
+/* Мобильные устройства в горизонтальном положении */
+
+
+
+/*git commit -m "аыв"*/
+
+/* ------------------------------------------------------ */
+
+/* -- Technology -- */
+
+.technology {
+	width: 100%;
+}
+
+.technology__wrap-items {
+	width: 95%;
+	margin: 0 auto;
+	min-height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 100px 0px;
+}
+
+.technology__wrap-items-row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	/*background-color: green;*/
+}
+
+.technology__item {
+	width: 160px;
+	height: 160px;
+	margin: 20px;
+	border: solid 3px black;
+	border-radius: 50%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	position: relative;
+	text-align: center;
+}
+
+#technology-git:after {
+	content: 'основы знаю';
+	position: absolute;
+	display: block;
+	width: 100%;
+	font-size: 11px;
+	margin-top: 45px;
+	text-align: center;
+}
+
+#technology-bem:after {
+	content: 'знаком с этой технологией';
+	position: absolute;
+	display: block;
+	width: 100%;
+	font-size: 11px;
+	margin-top: 45px;
+	text-align: center;
+}
+
+#technology-react:after {
+	content: 'базовый уровень';
+	position: absolute;
+	display: block;
+	width: 100%;
+	font-size: 11px;
+	margin-top: 45px;
+	text-align: center;
+}
+
+#technology-vue:after {
+	content: 'основы знаю';
+	position: absolute;
+	display: block;
+	width: 100%;
+	font-size: 11px;
+	margin-top: 45px;
+	text-align: center;
+}
+
+
+
+
+/* P.S. */
+
+/* min-height - используется при адаптивности */
+/* Принциа DRY - не повторяйся! */
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+					<div class="my-works__wrap-works">
+				<div class="window-modal">
+					<h2 class="window-modal__title">Описание задач</h2>
+					<ul class="window-modal__list">
+						<li class="window-modal__list-item"><a href="#">Курсы Нетология - более 80 выполненных заданий</a></li>
+						<li class="window-modal__list-item"><a href="#">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a></li>
+						<li class="window-modal__list-item"><a href="#">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a></li>
+						<li class="window-modal__list-item"><a href="#">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a></li>
+						<li class="window-modal__list-item"><a href="#">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a></li>
+						<li class="window-modal__list-item"><a href="#">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a></li>
+					</ul>
+					<h2 class="window-modal__title">Скачать исходный код</h2>
+				</div>
+				<div class="my-works__wrap-work-link">
+					<a href="https://codepen.io/Tixonov/collections" class="my-works__work-link netology-course-80" target="_blank">Курсы Нетология - более 80 выполненных заданий
+					</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+				<div class="my-works__wrap-work-link">
+					<a href="https://maksdeveloper14.github.io/Netology---verstka-s-0-do-1-maketa" class="my-works__work-link netology-course-html" target="_blank">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+				<div class="my-works__wrap-work-link">
+					<a href="https://codepen.io/Tixonov/pen/abdmBLE" class="my-works__work-link netology-course-js" target="_blank">Курсы Нетология Дипломная работа JavaScript - Игра ходилка</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+				<div class="my-works__wrap-work-link">
+					<a href="https://maksdeveloper14.github.io/Netology---Diplom-Work---JS-in-Browser" class="my-works__work-link netology-course-js-br" target="_blank">Курсы Нетология Дипломная работа JavaScript в браузере - Рецензирование изображений</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+				<div class="my-works__wrap-work-link">
+					<a href="https://maksdeveloper14.github.io/Verstka-Mogo" target="blank" class="my-works__work-link">Вёрстка по psd макету</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+				<div class="my-works__wrap-work-link">
+					<a href="https://maksdeveloper14.github.io/Verstka-Bootstrap---Online-Shop2" class="my-works__work-link">Верстка на Bootstrap (material design) - Онлайн магазин</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>	
+				<div class="my-works__wrap-work-link">
+					<a href="https://maksdeveloper14.github.io/ReactUdemy--AvtomatTesting/" target="blank" class="my-works__work-link">React Udemy полный курс - Автоматическое тестирование</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+				<div class="my-works__wrap-work-link">
+					<a href="https://codesandbox.io/s/react-sozdanie-odnostranichnogo-prilozheniya-s-ispolzovaniem-redux-l9mqn" target="blank" class="my-works__work-link">React - Одностраничное приложение c использованием Redux</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+				<div class="my-works__wrap-work-link">
+					<a href="https://codesandbox.io/s/react-spisok-zadach-zu6hg" target="blank" class="my-works__work-link">React - список задач</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+				<div class="my-works__wrap-work-link">
+					<a href="https://codesandbox.io/s/reactfloatmenu-l4l09" target="blank" class="my-works__work-link">React - Создание плавающего меню</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+				<div class="my-works__wrap-work-link">
+					<a href="https://maksdeveloper14.github.io/SearchWork---cat-packages" target="blank" class="my-works__work-link">1.Выполненное тестовое задание на hh - Кошачьи пакеты</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+				<div class="my-works__wrap-work-link"><a href="https://codesandbox.io/s/react-vypolnennoe-testovoe-zadanie-na-vakansiyu-frontend-razrabotchik-s-hh-47kmg" target="blank" class="my-works__work-link">2.Выполненное тестовое задание на hh - React таблица с данными</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>	
+				<div class="my-works__wrap-work-link">
+					<a href="https://maksdeveloper14.github.io/SearchWork---avito__vas" target="blank" class="my-works__work-link">3.Тестовое задание Авито выполненное на 70%</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>	
+				<div class="my-works__wrap-work-link">
+					<a href="https://ibb.co/6tM4kgg" target="blank" class="my-works__work-link">4.Выполнение тестового задания на hh - Стажёр в Яндекс-Маркет 2/4 задачи</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>	
+				<div class="my-works__wrap-work-link">
+					<a href="https://maksdeveloper14.github.io/ReactUdemy6" target="blank" class="my-works__work-link">Angular - приложение онлайн-аукцион</a>
+					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
+					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+*/

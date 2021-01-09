@@ -1,0 +1,63 @@
+/* Маленькие телефоны */
+@media screen and (max-width: 520px) {
+
+	/* Шапка сайта */
+	.header {
+		height: 300px;
+		background-position: top;
+		background-size: contain;
+		margin-bottom: 0;
+		padding: 0;
+	}
+
+	.header__title {
+		font-size: 16px;
+		margin-top: 90px;
+		margin-left: 40px;
+		line-height: 22px;
+		display: none;
+	}
+
+	.header__text {
+		font-size: 18px;
+		display: none;
+	}
+
+	/* Блок обо мне */
+	.about-me {
+		padding: 0;
+		flex-wrap: nowrap;
+		display: block;
+	}
+
+	.about-me__my-photo {
+		width: 175px;
+		height: 225px;
+		margin-top: 0;
+		margin: 0;
+		padding: 0;
+		padding-top: 0;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.about-me__text {
+		font-size: 10px;
+	}
+
+	/* Блок мои работы */
+	.my-works__title {
+		margin-top: 40px;
+		padding: 12px;
+		font-size: 20px;
+	}
+
+	.my-works__link {
+		width: 200px;
+		height: 50px;
+	}
+
+	/* Подвал сайта */
+
+}

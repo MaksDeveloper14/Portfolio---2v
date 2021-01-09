@@ -1,0 +1,70 @@
+@media screen and (max-width: 250px) {
+	
+}
+
+/* от 250 до 620 */
+@media screen and (min-width: 250px) and (max-width: 620px) {
+	.header {
+		background-size: cover;
+		background-position: bottom;
+	}
+
+	.header__title {
+		font-size: 26px;
+		line-height: 40px;
+		margin-top: 50px;
+		padding: 0;
+		/*padding-left: 30px;*/
+	}
+
+	.header__text {
+		font-size: 26px;
+		margin-top: 50px;
+		padding-left: 70px;
+	}
+
+	 /* моя фотография */
+	.about-me__my-photo {
+		width: 250px;
+		height: 300px;
+		border-radius: 10px;
+		float: left;
+		margin-right: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+
+	.about-me {
+		padding: 0;
+		margin-top: 20px;
+		display: block;
+		background-color: #0a0a0a;
+		margin-top: 0;
+		color: white;
+	}
+
+	.about-me__text {
+		display: none;
+	}
+
+	.about-me__float-left {
+		display: block;
+	}
+
+	.my-works {
+		background-color: #0a0a0a;
+	}
+
+	.my-works__title {
+		font-size: 20px;
+		padding: 25px;
+		margin-top: 20px;
+	}
+
+	.my-works__link {
+		width: 200px;
+		height: 200px;
+		color: white;
+		background-color: black;
+	}
+}

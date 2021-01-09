@@ -1,0 +1,185 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ADAPTIVE  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* --- MEDIA QUERIES --- */
+
+/* 0 до 250 */
+@media screen and (max-width: 250px) {
+	
+}
+
+
+/* от 250 до 620 */
+@media screen and (min-width: 250px) and (max-width: 620px) {
+	.header {
+		background-size: cover;
+		background-position: bottom;
+		height: 300px;
+	}
+
+	.Contact Information {
+		height: 40px;
+	}
+
+	.header__title {
+		font-size: 16px;
+		line-height: 20px;
+		/*padding-left: 30px;*/
+	}
+
+	.header__text {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.about-me__my-photo {
+		width: 180px;
+		height: 210px;
+		border-radius: 10px;
+		float: left;
+		margin-right: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+
+	.about-me {
+		padding: 0;
+		margin-top: 20px;
+		display: block;
+	}
+
+	.about-me__text {
+		display: none;
+	}
+
+	.about-me__float-left {
+		display: block;
+	}
+
+	.my-works__title {
+		font-size: 20px;
+		padding: 25px;
+		margin-top: 20px;
+	}
+
+	.my-works__link {
+		font-size: 12px;
+		width: 150px;
+		height: 150px;
+		padding: 0;
+	}
+
+	.certificates {
+		padding-top: 20px;
+	}
+	.certificaties__item {
+		width: 90px;
+		height: 140px;
+		overflow: hidden;
+		border-radius: 7px;
+		margin-right: 10px;
+		border: solid 3px blue;
+	}
+}
+
+/* от 250px до 371px переопределяем размер блоков работ  */ 
+/* Важно прописывать этот медиазапрос ниже основного, чтобы переопределить элементы */
+@media screen and (min-width: 250px) and (max-width: 371px) {
+	.my-works__link { 
+		width: 120px;	/* Растягиваем блоки работы на всю ширину */
+		height: 120px;
+		border: 3px solid #333;
+	}
+}
+
+
+/* 621px до 899px */
+@media screen and (min-width: 621px)  and (max-width: 899px) {
+	.header {
+		background-size: cover;
+		background-position: bottom;
+		height: 400px;
+	}
+
+	.Contact Information {
+		height: 40px;
+	}
+
+	.header__title {
+		display: none;
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 10px;
+		padding: 0;
+		/*padding-left: 30px;*/
+	}
+
+	.header__text {
+		display: none;
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 10px;
+		padding-left: 40px;
+	}
+
+	.about-me {
+		padding: 0;
+		margin-top: 20px;
+		display: block;
+	}
+
+	 /* моя фотография */
+	.about-me__my-photo {
+		width: 350px;
+		height: 400px;
+		border-radius: 10px;
+		float: left;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+
+	.about-me__title2 {
+		font-size: 18px;
+	}
+
+	.about-me__text {
+		display: none;
+	}
+
+	.about-me__float-left {
+		display: block;
+	}
+
+	.my-works__title {
+		font-size: 26px;
+		padding: 25px;
+		margin-top: 20px;
+	}
+}
+
+
+/* 621px до 713px */ 
+/* Переопределяем, значить помещаем ниже основного */
+@media screen and (min-width: 621px) and (max-width: 713px) {
+	.header {
+		background-position: top;
+		height: 473px;
+	}
+}
+
+/* 900px до 1200px */
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+	/* Уменьшаем высоту навигации */
+	.Contact Information {
+		height: 50px;
+	}
+}
