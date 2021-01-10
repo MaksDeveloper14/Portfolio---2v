@@ -130,3 +130,7 @@
 		i++;
 		myPhoto.src = arrSrc[i];
 	});
+
+
+
+
