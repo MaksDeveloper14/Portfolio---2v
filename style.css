@@ -170,6 +170,10 @@
 	position: relative;
 } 
 
+.my-works__link {
+	text-decoration: none;
+}
+
 .my-works__title {	
 	text-align: center;
 	font-weight: bold;
@@ -177,8 +181,7 @@
 	padding: 40px;
 	color: white;
 	cursor: pointer;
-	background-color: #101010;
-	background-color: #0a0a0a;
+	background-color: #0e0e0e;
 } 
 
 .my-works__wrap-works {
@@ -273,8 +276,8 @@
 
 .footer {
 	width: 100%;
-	background-color: #111;
 	border-top: 1px solid white;
+	background-color: #060606;
 }
 
 .footer h2 {
@@ -319,9 +322,7 @@
 	color: white;
 	text-align: center;
 	font-weight: normal;
-	background-color: #040404;
-	background-color: black;
-	background-color: #111;
+	background-color: #060606;
 }
 
 
@@ -667,98 +668,6 @@
 
 
 
-					<div class="my-works__wrap-works">
-				<div class="window-modal">
-					<h2 class="window-modal__title">Описание задач</h2>
-					<ul class="window-modal__list">
-						<li class="window-modal__list-item"><a href="#">Курсы Нетология - более 80 выполненных заданий</a></li>
-						<li class="window-modal__list-item"><a href="#">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a></li>
-						<li class="window-modal__list-item"><a href="#">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a></li>
-						<li class="window-modal__list-item"><a href="#">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a></li>
-						<li class="window-modal__list-item"><a href="#">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a></li>
-						<li class="window-modal__list-item"><a href="#">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a></li>
-					</ul>
-					<h2 class="window-modal__title">Скачать исходный код</h2>
-				</div>
-				<div class="my-works__wrap-work-link">
-					<a href="https://codepen.io/Tixonov/collections" class="my-works__work-link netology-course-80" target="_blank">Курсы Нетология - более 80 выполненных заданий
-					</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-				<div class="my-works__wrap-work-link">
-					<a href="https://maksdeveloper14.github.io/Netology---verstka-s-0-do-1-maketa" class="my-works__work-link netology-course-html" target="_blank">Курсы Нетология Дипломная работа HTML вёрстка - с 0 до 1 макета</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-				<div class="my-works__wrap-work-link">
-					<a href="https://codepen.io/Tixonov/pen/abdmBLE" class="my-works__work-link netology-course-js" target="_blank">Курсы Нетология Дипломная работа JavaScript - Игра ходилка</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-				<div class="my-works__wrap-work-link">
-					<a href="https://maksdeveloper14.github.io/Netology---Diplom-Work---JS-in-Browser" class="my-works__work-link netology-course-js-br" target="_blank">Курсы Нетология Дипломная работа JavaScript в браузере - Рецензирование изображений</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-				<div class="my-works__wrap-work-link">
-					<a href="https://maksdeveloper14.github.io/Verstka-Mogo" target="blank" class="my-works__work-link">Вёрстка по psd макету</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-				<div class="my-works__wrap-work-link">
-					<a href="https://maksdeveloper14.github.io/Verstka-Bootstrap---Online-Shop2" class="my-works__work-link">Верстка на Bootstrap (material design) - Онлайн магазин</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>	
-				<div class="my-works__wrap-work-link">
-					<a href="https://maksdeveloper14.github.io/ReactUdemy--AvtomatTesting/" target="blank" class="my-works__work-link">React Udemy полный курс - Автоматическое тестирование</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-				<div class="my-works__wrap-work-link">
-					<a href="https://codesandbox.io/s/react-sozdanie-odnostranichnogo-prilozheniya-s-ispolzovaniem-redux-l9mqn" target="blank" class="my-works__work-link">React - Одностраничное приложение c использованием Redux</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-				<div class="my-works__wrap-work-link">
-					<a href="https://codesandbox.io/s/react-spisok-zadach-zu6hg" target="blank" class="my-works__work-link">React - список задач</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-				<div class="my-works__wrap-work-link">
-					<a href="https://codesandbox.io/s/reactfloatmenu-l4l09" target="blank" class="my-works__work-link">React - Создание плавающего меню</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-				<div class="my-works__wrap-work-link">
-					<a href="https://maksdeveloper14.github.io/SearchWork---cat-packages" target="blank" class="my-works__work-link">1.Выполненное тестовое задание на hh - Кошачьи пакеты</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-				<div class="my-works__wrap-work-link"><a href="https://codesandbox.io/s/react-vypolnennoe-testovoe-zadanie-na-vakansiyu-frontend-razrabotchik-s-hh-47kmg" target="blank" class="my-works__work-link">2.Выполненное тестовое задание на hh - React таблица с данными</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>	
-				<div class="my-works__wrap-work-link">
-					<a href="https://maksdeveloper14.github.io/SearchWork---avito__vas" target="blank" class="my-works__work-link">3.Тестовое задание Авито выполненное на 70%</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>	
-				<div class="my-works__wrap-work-link">
-					<a href="https://ibb.co/6tM4kgg" target="blank" class="my-works__work-link">4.Выполнение тестового задания на hh - Стажёр в Яндекс-Маркет 2/4 задачи</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>	
-				<div class="my-works__wrap-work-link">
-					<a href="https://maksdeveloper14.github.io/ReactUdemy6" target="blank" class="my-works__work-link">Angular - приложение онлайн-аукцион</a>
-					<!-- <a href="#Задание" class="my-works__description-link">Задание</a> -->
-					<!-- <a href="#Скачать zip" class="my-works__code-zip">Скачать zip</a> -->
-				</div>
-			</div>
-
-
-
 
 
 
@@ -767,3 +676,18 @@
 
 
 */
+
+
+
+
+
+
+
+
+
+
+/* Страница my-works */
+
+.title {
+	text-align: center;
+}
