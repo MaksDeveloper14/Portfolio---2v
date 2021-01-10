@@ -679,15 +679,10 @@
 
 
 
-
-
-
-
-
-
-
 /* Страница my-works */
 
 .title {
 	text-align: center;
+	color: white;
+	font-size: 35px;
 }
